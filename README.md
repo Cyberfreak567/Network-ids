@@ -17,3 +17,19 @@ Detect HTTP GET requests (web activity)
 
 https://github.com/user-attachments/assets/fee5da08-9c16-471d-8090-18d01d043fb8
 
+# 🛠️ Installation Steps
+sudo apt update
+sudo apt install suricata -y
+
+Enable HTTP Parsing
+sudo nano /etc/suricata/suricata.yaml
+
+# 🚦 Running Suricata
+sudo suricata -c /etc/suricata/suricata.yaml -i ens33
+
+# Testing 
+ICMP: ping google.com
+Http: curl http://testphp.vulnweb.com/
+
+# Check Alerts
+sudo tail -f /var/log/suricata/fast.log
