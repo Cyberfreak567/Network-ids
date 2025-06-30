@@ -13,4 +13,7 @@ This project showcases a basic Network Intrusion Detection System (NIDS) using S
 Detect ICMP Echo Requests (ping scans)
 Detect HTTP GET requests (web activity)
 
+# **Video**
+
+https://github.com/user-attachments/assets/fee5da08-9c16-471d-8090-18d01d043fb8
 
